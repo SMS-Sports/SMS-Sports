@@ -3,12 +3,13 @@
 	height: 480px;
 }
 
-div.jumbotron > a.1 {
-	font-size: 500px;
-	font-color: #F1F1F1;
+a .1{
+	font-size: 100px;
+	font-color: "red";
 }
 
-div.jumbotron div.2 {
-	font-size: 500px;
-	font-color: #F1F1F1;
+div.jumbotron div.container .stuff{
+	font-size: 200px;
+	color: red;
 }
+
