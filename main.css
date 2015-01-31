@@ -1,4 +1,14 @@
-body {
-	background: #F1F1F1;
-	}
+.jumbotron {
+	background-image: url(http://f.pizzot.com/iphone/cb9412f6030124747313053d7a3d684d/Green-Grass-i.jpg);
+	height: 480px;
+}
 
+div.jumbotron > a.1 {
+	font-size: 500px;
+	font-color: #F1F1F1;
+}
+
+div.jumbotron div.2 {
+	font-size: 500px;
+	font-color: #F1F1F1;
+}
