@@ -8,94 +8,94 @@ class Region(models.Model):
 		(USA, 'USA'),
 		(EUROPE, 'Europe'),
 	)
-	soccer_region = models.CharField(max_length=2, choices=REGION_CHOICES, default=NORTH_AMERICA)
+	soccer_region = models.CharField(max_length=2, choices=REGION_CHOICES, default=USA)
 
 class NATeam(models.Model):
-	SEATTLE SOUNDERS = 'SEA'
-	NEW YOUR REDBULLS = 'NYR'
-	LA GALAXY = 'LAG'
-	TORONTO FC = 'TFC'
-	NEW ENGLAND REVOLUTION = 'REV'
-	CHIVAS USA = 'CHS'
-	NEW YORK CITY FC = 'NYC'
-	PORTLAND TIMBERS = 'POR'
-	VANCOUVER WHITECAPS FC = 'VAN'
-	PHILADELPHIA UNION = 'PHI'
-	REAL SALT LAKE = 'RSL'
-	D.C. UNITED = 'DCU'
-	COLUMBUS CREW SC = 'COL'
-	SAN JOSE EARTHQUAKES = 'SJE'
-	ORLANDO CITY SC = 'ORL'
-	HOUSTON DYNAMO = 'HOU'
-	FC DALLAS = 'DAL'
-	MONTREAL IMPACT = 'MTL'
-	CHICAGO FIRE SOCCER CLUB = 'CHI'
-	COLORADO RAPIDS = 'CDO'
-	ATLANTA MLS TEAM = 'ATL'
+	SEATTLE_SOUNDERS = 'SEA'
+	NEW_YORK_REDBULLS = 'NYR'
+	LA_GALAXY = 'LAG'
+	TORONTO_FC = 'TFC'
+	NEW_ENGLAND_REVOLUTION = 'REV'
+	CHIVAS_USA = 'CHS'
+	NEW_YORK_CITY_FC = 'NYC'
+	PORTLAND_TIMBERS = 'POR'
+	VANCOUVER_WHITECAPS_FC = 'VAN'
+	PHILADELPHIA_UNION = 'PHI'
+	REAL_SALT_LAKE = 'RSL'
+	DC_UNITED = 'DCU'
+	COLUMBUS_CREW_SC = 'COL'
+	SAN_JOSE_EARTHQUAKES = 'SJE'
+	ORLANDO_CITY_SC = 'ORL'
+	HOUSTON_DYNAMO = 'HOU'
+	FC_DALLAS = 'DAL'
+	MONTREAL_IMPACT = 'MTL'
+	CHICAGO_FIRE_SOCCER_CLUB = 'CHI'
+	COLORADO_RAPIDS = 'CDO'
+	ATLANTA_MLS_TEAM = 'ATL'
 	
 	NATEAM_CHOICES = (
-		(SEATTLE SOUNDERS, 'Seattle Sounders'),
-		(NEW YOUR REDBULLS, 'New York Redbulls'),
-		(LA GALAXY, 'LA Galaxy'),
-		(TORONTO FC, 'Toronto FC'),
-		(NEW ENGLAND REVOLUTION, 'New England Revolution'),
-		(CHIVAS USA, 'Chivas USA'),
-		(NEW YORK CITY FC, 'NYC FC'),
-		(PORTLAND TIMBERS, 'Portland Timbers'),
-		(VANCOUVER WHITECAPS FC, 'Vancouver Whitecaps'),
-		(PHILADELPHIA UNION, 'Philadelphia Union'),
-		(REAL SALT LAKE, 'Real Salt Lake'),
-		(D.C. UNITED, 'DC United'),
-		(COLUMBUS CREW SC, 'Columbus Crew'), 
-		(SAN JOSE EARTHQUAKES, 'San Jose Earthquaks'),
-		(ORLANDO CITY SC, 'Orlando City FC'),
-		(HOUSTON DYNAMO, 'Houston Dynamo'),
-		(FC DALLAS, 'FC Dallas'),
-		(MONTREAL IMPACT, 'Montreal Impact'),
-		(CHICAGO FIRE SOCCER CLUB, 'Chicago Fire'),
-		(COLORADO RAPIDS, 'Colorado Rapids'),
-		(ATLANTA MLS TEAM, 'Atanta'),
+		(SEATTLE_SOUNDERS, 'Seattle Sounders'),
+		(NEW_YORK_REDBULLS, 'New York Redbulls'),
+		(LA_GALAXY, 'LA Galaxy'),
+		(TORONTO_FC, 'Toronto FC'),
+		(NEW_ENGLAND_REVOLUTION, 'New England Revolution'),
+		(CHIVAS_USA, 'Chivas USA'),
+		(NEW_YORK_CITY_FC, 'NYC FC'),
+		(PORTLAND_TIMBERS, 'Portland Timbers'),
+		(VANCOUVER_WHITECAPS_FC, 'Vancouver Whitecaps'),
+		(PHILADELPHIA_UNION, 'Philadelphia Union'),
+		(REAL_SALT_LAKE, 'Real Salt Lake'),
+		(DC_UNITED, 'DC United'),
+		(COLUMBUS_CREW_SC, 'Columbus Crew'), 
+		(SAN_JOSE_EARTHQUAKES, 'San Jose Earthquaks'),
+		(ORLANDO_CITY_SC, 'Orlando City FC'),
+		(HOUSTON_DYNAMO, 'Houston Dynamo'),
+		(FC_DALLAS, 'FC Dallas'),
+		(MONTREAL_IMPACT, 'Montreal Impact'),
+		(CHICAGO_FIRE_SOCCER_CLUB, 'Chicago Fire'),
+		(COLORADO_RAPIDS, 'Colorado Rapids'),
+		(ATLANTA_MLS_TEAM, 'Atanta'),
 	)
-	soccer_region = models.CharField(max_length=2, choices=REGION_CHOICES, default=NORTH_AMERICA)
+	soccer_region = models.CharField(max_length=4, choices=NATEAM_CHOICES, default=SEATTLE_SOUNDERS)
 
 class EUTeam(models.Model):
-	REAL MADRID = 'MAD'
+	REAL_MADRID = 'MAD'
 	BARCELONA = 'BAR'
-	ATLETICO MADRID = 'ATL'
-	MANCHESTER CITY = 'MCY'
+	ATLETICO_MADRID = 'ATL'
+	MANCHESTER_CITY = 'MCY'
 	CHELSEA = 'CHE'
 	ARSENAL = 'ARS'
 	LIVERPOOL = 'LIV'
-	MANCHESTER UNITED = 'MNU'
+	MANCHESTER_UNITED = 'MNU'
 	TOTTENHAM = 'TOT'
 	PSG = 'PSG'
-	OLYMPIQUE LYONNAISE = 'OL'
-	AC MILAN = 'MIL'
+	OLYMPIQUE_LYONNAISE = 'OL'
+	AC_MILAN = 'MIL'
 	JUVENTUS = 'JUV'
-	INTER MILAN = 'INT'
+	INTER_MILAN = 'INT'
 	NAPOLI = 'NAP'
 	ROMA = 'ROMA'
-	BAYERN MUNICH = 'BMU'
-	BORRUSIA DORTMUND = 'BOR'
+	BAYERN_MUNICH = 'BMU'
+	BORRUSIA_DORTMUND = 'BOR'
 
-	REGION_CHOICES = (
-		(REAL MADRID = 'Real Madrid'),
-		(BARCELONA = 'Barcelona'),
-		(ATLETICO MADRID = 'Atletico Madrid'),
-		(MANCHESTER CITY = 'Manchester City'),
-		(CHELSEA = 'Cheslea'),
-		(ARSENAL = 'Arsenal'),
-		(LIVERPOOL = 'Liverpool'),
-		(MANCHESTER UNITED = 'Manchester United'),
-		(TOTTENHAM = 'Tottenham Hotspur'),
-		(PSG = 'Paris St. Germain'),
-		(OLYMPIQUE LYONNAISE = 'Lyon'),
-		(AC MILAN = 'AC Milan'),
-		(JUVENTUS = 'Juventus'),
-		(INTER MILAN = 'Inter Milan'),
-		(NAPOLI = 'Napoli'),
-		(ROMA = 'Roma'),
-		(BAYERN MUNICH = 'Bayern Munich'),
-		(BORRUSIA DORTMUND = 'Borussia Dortmund'),
+	EUTEAM_CHOICES = (
+		(REAL_MADRID, 'Real Madrid'),
+		(BARCELONA, 'Barcelona'),
+		(ATLETICO_MADRID, 'Atletico Madrid'),
+		(MANCHESTER_CITY, 'Manchester City'),
+		(CHELSEA, 'Cheslea'),
+		(ARSENAL, 'Arsenal'),
+		(LIVERPOOL, 'Liverpool'),
+		(MANCHESTER_UNITED, 'Manchester United'),
+		(TOTTENHAM, 'Tottenham Hotspur'),
+		(PSG, 'Paris St. Germain'),
+		(OLYMPIQUE_LYONNAISE, 'Lyon'),
+		(AC_MILAN, 'AC Milan'),
+		(JUVENTUS, 'Juventus'),
+		(INTER_MILAN, 'Inter Milan'),
+		(NAPOLI, 'Napoli'),
+		(ROMA, 'Roma'),
+		(BAYERN_MUNICH, 'Bayern Munich'),
+		(BORRUSIA_DORTMUND, 'Borussia Dortmund'),
 	)
-	soccer_region = models.CharField(max_length=2, choices=REGION_CHOICES, default=NORTH_AMERICA)
+	soccer_region = models.CharField(max_length=4, choices=EUTEAM_CHOICES, default=REAL_MADRID)
