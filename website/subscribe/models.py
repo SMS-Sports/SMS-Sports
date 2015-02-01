@@ -2,15 +2,25 @@ from django.db import models
 
 # Create your models here.
 class Region(models.Model):
+	name = models.CharField(max_length=30)
+
+	'''
 	USA = 'USA'
 	EUROPE = 'EU'
 	REGION_CHOICES = (
 		(USA, 'USA'),
 		(EUROPE, 'Europe'),
 	)
-	soccer_region = models.CharField(max_length=2, choices=REGION_CHOICES, default=USA)
+	Region = models.CharField(max_length=3, choices=REGION_CHOICES, default=USA)
+	'''
+
+	def __str__(self):
+		return self.name
 
 class NATeam(models.Model):
+	name = models.CharField(max_length=30)
+
+	'''
 	SEATTLE_SOUNDERS = 'SEA'
 	NEW_YORK_REDBULLS = 'NYR'
 	LA_GALAXY = 'LAG'
@@ -56,9 +66,18 @@ class NATeam(models.Model):
 		(COLORADO_RAPIDS, 'Colorado Rapids'),
 		(ATLANTA_MLS_TEAM, 'Atanta'),
 	)
-	soccer_region = models.CharField(max_length=4, choices=NATEAM_CHOICES, default=SEATTLE_SOUNDERS)
+	team = models.CharField(max_length=4, choices=NATEAM_CHOICES, default=SEATTLE_SOUNDERS)
+	region = models.ForeignKey(Region)
+	'''
+
+	def __str__(self):
+		return self.name
+
 
 class EUTeam(models.Model):
+	name = models.CharField(max_length=30)
+
+	'''
 	REAL_MADRID = 'MAD'
 	BARCELONA = 'BAR'
 	ATLETICO_MADRID = 'ATL'
@@ -98,4 +117,11 @@ class EUTeam(models.Model):
 		(BAYERN_MUNICH, 'Bayern Munich'),
 		(BORRUSIA_DORTMUND, 'Borussia Dortmund'),
 	)
-	soccer_region = models.CharField(max_length=4, choices=EUTEAM_CHOICES, default=REAL_MADRID)
+	team = models.CharField(max_length=4, choices=EUTEAM_CHOICES, default=REAL_MADRID)
+	region = models.ForeignKey(Region)
+	'''
+
+	def __str__(self):
+		return self.name
+
+
