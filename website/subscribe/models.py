@@ -1,9 +1,8 @@
 from django.db import models
 import requests
+import urllib.request
 import xml.etree.ElementTree as ET
-r = requests.get("http://api.sportsdatallc.org/soccer-t2/eu/matches/2015/02/01/schedule.xml?api_key=5y5hy4x448aetyzjchj82ssw")
-tree = ET.parse('country_data.xml')
-root=tree.getroot()
+
 
 # Create your models here.
 class Region(models.Model):
@@ -130,6 +129,11 @@ class EUTeam(models.Model):
 		return self.name
 
 	def did_play_today(self):
-
+		xml = urllib.request.urlopen("http://api.sportsdatallc.org/soccer-t2/eu/matches/2015/02/01/schedule.xml?api_key=5y5hy4x448aetyzjchj82ssw", data=None)
+		tree = ET.parse(xml)
+		root = tree.getroot()
+		print(root[0][0][3])
+		print(root[0][0][4])
+		return "Congratulations!"
 
 
