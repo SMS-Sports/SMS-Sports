@@ -1,7 +1,7 @@
 from django.db import models
 import requests
 import xml.etree.ElementTree as ET
-r = requests.get()
+r = requests.get("http://api.sportsdatallc.org/soccer-t2/eu/matches/2015/02/01/schedule.xml?api_key=5y5hy4x448aetyzjchj82ssw")
 tree = ET.parse('country_data.xml')
 root=tree.getroot()
 
