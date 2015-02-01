@@ -9,9 +9,9 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     # Login
-    #url(r'^accounts/login/$', 'login.views.login'),
-    #url(r'^accounts/auth/$', 'login.views.auth_view'),
-    #url(r'^accounts/logout/$', 'login.views.logout'),
-    #url(r'^accounts/loggedin/$', 'login.views.loggedin'),
-    #url(r'^accounts/invalid/$', 'login.views.invalid_login'),
+    url(r'^login/', 'login.views.login'),
+    url(r'^auth/', 'login.views.auth_view'),
+    url(r'^logout/', 'login.views.logout'),
+    url(r'^loggedin/', 'login.views.loggedin'),
+    url(r'^invalid/', 'login.views.invalid_login'),
 ) 

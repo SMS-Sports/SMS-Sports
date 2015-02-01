@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>SMS Login</title>
+		<title>{% block title %}SMS Sports{% endblock %}</title>
 		<meta charset="UTF-8">
 
 		<!-- Latest compiled and minified CSS -->
@@ -24,8 +24,11 @@
 			<li><a href="....html">SCORES</a></li>
 			<li><a href="....html">ABOUT</a></li>
 		</ul>
+		
 
-		<form action=
+		{% block content %}
+		{% endblock %}
+
 
 		<footer>
 			

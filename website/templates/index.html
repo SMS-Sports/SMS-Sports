@@ -1,58 +1,14 @@
-{% load staticfiles %}
-<!doctype html>
-<html>
+{% extends "foundation.html" %}
 
-	<head>
-		<title>SMS Score</title>
-		<meta charset="UTF-8">
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-		<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}"/>
-
-	</head>
-
-	<body>
-
-
-
-		<ul class="nav nav-pills pull-right">
-			<li><a href="....html">SIGN UP</a></li>
-			<li><a href="....html">TEAMS</a></li>
-			<li><a href="....html">SCORES</a></li>
-			<li><a href="....html">ABOUT</a></li>
-		</ul>
-		
-		<center>
-			<div class="jumbotron">
-				<div class="container">
-					<h1>SMS SPORTS</h1>
-					<h4>Instant scores. Wherever you are.</h4>
-					<a class="mainlinks" href="....html">Sign Up</a>	
-					<a class="mainlinks" href="....html">Log In</a>
-				</div>
+{% block content %}
+	<center>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>SMS SPORTS</h1>
+				<h4>Instant scores. Wherever you are.</h4>
+				<a class="mainlinks" href="login">Sign Up</a>	
+				<a class="mainlinks" href="login">Log In</a>
 			</div>
-		</center>
-
-		<footer>
-			
-			<div class="container media">
-				<p> <small><a href="facebook.com">Like us</a> on Facebook</small> </p>
-				<p> <small><a href="facebook.com">Follow us</a> on Twitter</small></p>
-			</div>
-	
-		</footer>
-
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="http://code.jquery.com/jquery-2.1.3.min.js"</script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-
-	</body>
-
-</html>
+		</div>
+	</center>
+{% endblock %}
