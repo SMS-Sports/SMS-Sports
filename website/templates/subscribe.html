@@ -4,20 +4,24 @@
 
 {% block content %}
 	{% if region %}
-		<p>Choose your team's region:</p>
-		<select>
-		{% for r in region %}
-			<option>{{r.name}}</option>
-		{% endfor %}
-		{% if value = %}
-		</select>
-		<br><br>
-		<p>Choose your team:</p>
-		<select>
-		{% for team in nateam %}
-			<option>{{team.name}}</option>
-		{% endfor %}
-		</select>
+		<form action="/confirmation/" method="get"></form>
+			<p>Choose your team's region:</p>
+			<select>
+			{% for r in region %}
+				<option>{{r.name}}</option>
+			{% endfor %}
+			</select>
+			<br><br>
+			<p>Choose your team:</p>
+			<select name="chosen_team">
+			{% for team in euteam %}
+				<option value={{team.name}}>{{team.name}}</option>
+			{% endfor %}
+			</select>
+			<br><br>
+			<p>Click <a href="/process/">here</a> to continue...</p>
+			<br><br>
+		</form>
 
 	{% else %}
 		<p>No options are available.</p>

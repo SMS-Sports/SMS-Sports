@@ -7,8 +7,9 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     # url(r'^blog/', include('blog.urls')),
     
-    # Subscription choice
+    # Subscription process
     url(r'^subscribe/', 'subscribe.views.index'),
+    url(r'^process/', 'subscribe.views.process'),
 
     # Login
     url(r'^login/', 'login.views.login'),

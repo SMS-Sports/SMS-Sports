@@ -1,4 +1,9 @@
 from django.db import models
+import requests
+import xml.etree.ElementTree as ET
+r = requests.get()
+tree = ET.parse('country_data.xml')
+root=tree.getroot()
 
 # Create your models here.
 class Region(models.Model):
@@ -123,5 +128,8 @@ class EUTeam(models.Model):
 
 	def __str__(self):
 		return self.name
+
+	def did_play_today(self):
+
 
 
