@@ -86,11 +86,6 @@ a.mainlinks {
 
 }
 
-
-
-
-
-
 .media p {
 	font-weight: bold;
 	display: inline-block;
@@ -112,3 +107,22 @@ a.mainlinks {
 .media a:hover {
     color: #6BB224;
 }
+
+
+/* CSS Stylesheet for Login Page */
+
+.login div{
+    border-width: 3px;
+    border-radius: 5px;
+    align-self: center;
+    align-content: center;
+    background: #fff;
+    opacity: 06;
+    
+}
+
+.login input{
+    width: 300px;
+    height:100px;
+}
+
