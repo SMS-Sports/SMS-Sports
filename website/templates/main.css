@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'armwrestlerbold';
+    src: url('../fonts/armwrestler-webfont.eot') format ('eot');
+    src: url('../fonts/armwrestler-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/armwrestler-webfont.woff') format('woff');
+    src: url('../fonts/armwrestler-webfont.ttf') format('truetype');
+    src: url('../fonts/armwrestler-webfont.svg#armwrestlerbold') format('svg');
+    font-weight: 400;
+    font-style: bold;
+
+}
+
+
+.jumbotron {
+	background-position: 0px 40px;
+	background-image: url(http://www.timbers.com/sites/portland/files/TimbersValencia.jpg);
+	background-size: 1500px 700px;
+	background-repeat: no-repeat;
+	height: 560px;
+}
+
+
+
+
+.nav a {
+	padding-top: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0052CC;
+	text-decoration: none;
+}
+
+/* unvisited link */
+.nav a:link {
+    color: #0052CC;
+}
+
+/* visited link */
+.nav a:visited {
+    color: #777777;
+}
+
+/* mouse over link */
+.nav a:hover {
+    color: #6BB224;
+
+}
+
+
+
+
+div.jumbotron div.container h1 {
+	font-family: 'armwrestlerbold', Helvetica, Arial, sans-serif;
+	font-style: bold;
+	font-weight: 900;
+	font-size: 90px;
+	color: #EBEBEB;
+	text-decoration: none;
+	text-shadow: 1px 1px 60px #000000;
+	padding-top: 150px;
+
+}
+
+div.jumbotron div.container h4 {
+	font-family: 'armwrestlerbold', Helvetica, Arial, sans-serif;
+	color: #EBEBEB;
+	font-size: 20px;
+	text-shadow: 5px 5px 10px #000000;
+}
+
+
+a.mainlinks {
+	font-size: 20px;
+	display: inline-block;
+	margin-left: 30px;
+	margin-top: 70px;
+	margin-right: 10px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	color: #0052CC;
+	width:200px;
+	height: 50px;
+	border: 3px solid white;
+	background-color: white;
+
+}
+
+
+
+
+
+
+.media p {
+	font-weight: bold;
+	display: inline-block;
+	text-decoration: none;
+	padding-bottom: 40px;
+}
+
+/* unvisited link */
+.media a:link {
+	color: #0052CC;
+}
+
+/* visited link */
+.media a:visited {
+    color: #777777;
+}
+
+/* mouse over link */
+.media a:hover {
+    color: #6BB224;
+}
