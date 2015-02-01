@@ -5,13 +5,13 @@ class Region(models.Model):
 	name = models.CharField(max_length=30)
 
 	'''
-	USA = 'USA'
+	NORTH_AMERICA = 'NA'
 	EUROPE = 'EU'
 	REGION_CHOICES = (
-		(USA, 'USA'),
+		(NORTH_AMERICA, 'North America'),
 		(EUROPE, 'Europe'),
 	)
-	Region = models.CharField(max_length=3, choices=REGION_CHOICES, default=USA)
+	region = models.CharField(max_length=3, choices=REGION_CHOICES, default=USA)
 	'''
 
 	def __str__(self):

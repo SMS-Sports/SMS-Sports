@@ -3,11 +3,19 @@
 {% block title %}Logged in{% endblock %}
 
 {% block content %}
-	{% if Region.objects.all() %}
+	{% if region %}
 		<p>Choose your team's region:</p>
 		<select>
-		{% for region in Region.objects.all() %}
-			<option>{{region.name}}</option>
+		{% for r in region %}
+			<option>{{r.name}}</option>
+		{% endfor %}
+		{% if value = %}
+		</select>
+		<br><br>
+		<p>Choose your team:</p>
+		<select>
+		{% for team in nateam %}
+			<option>{{team.name}}</option>
 		{% endfor %}
 		</select>
 
